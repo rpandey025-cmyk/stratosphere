@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-garet: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-accent: #8b5cf6; /* Electric Violet */
+  --color-accent-secondary: #06b6d4; /* Cyan */
+  --color-bg-deep: #000000;
+  --color-bg-surface: #0a0a0a;
+  --color-border-subtle: rgba(255, 255, 255, 0.08);
+}
+
+@layer base {
+  body {
+    @apply bg-bg-deep text-neutral-300 font-sans antialiased selection:bg-accent selection:text-white;
+    position: relative;
+    overflow-x: hidden;
+  }
+  
+  /* Noise Texture Overlay */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+    opacity: 0.03;
+    pointer-events: none;
+    z-index: 100;
+    filter: contrast(150%) brightness(100%);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight text-white font-semibold;
+  }
+}
+
+.glass {
+  @apply bg-white/[0.02] backdrop-blur-xl border border-white/[0.08];
+}
+
+.glass-dark {
+  @apply bg-black/40 backdrop-blur-2xl border border-white/[0.05];
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-br from-white via-white to-white/40;
+}
+
+.text-gradient-accent {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-accent to-accent-secondary;
+}
+
+.glow-border {
+  position: relative;
+}
+
+.glow-border::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  background: linear-gradient(to bottom right, rgba(139, 92, 246, 0.3), transparent, rgba(6, 118, 212, 0.3));
+  z-index: -1;
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.glow-border:hover::after {
+  opacity: 1;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 60s linear infinite;
+}
