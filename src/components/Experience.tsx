@@ -68,9 +68,9 @@ export default function Experience() {
                 <span className="text-neutral-500">Over 14 Years.</span>
               </h2>
               <p className="text-neutral-400 text-lg md:text-xl mb-10 font-light leading-relaxed">
-                My approach is forged in the trenches of leading media and telecom brands, growing startups and SMBs, combined with a global perspective across Middle East, Africa and SEA.
+                Our approach is forged in the trenches of leading media and telecom brands, growing startups and SMBs, combined with a global perspective across Middle East, Africa and SEA.
               </p>
-              
+
               <div className="space-y-4">
                 {[
                   "Global Exposure",
@@ -110,8 +110,8 @@ export default function Experience() {
                 <p className="text-neutral-400 font-light leading-relaxed text-lg">{exp.desc}</p>
               </motion.div>
             ))}
-            
-            <motion.div 
+
+            <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
@@ -124,7 +124,7 @@ export default function Experience() {
 
         {/* Industry Endorsements - Paginated Single View */}
         <div className="mt-24 pt-20 border-t border-white/5">
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -132,7 +132,7 @@ export default function Experience() {
           >
             Industry <span className="text-accent">Endorsements</span>
           </motion.h2>
-          
+
           <div className="relative max-w-4xl mx-auto">
             <div className="min-h-[350px] md:min-h-[280px] flex items-center justify-center">
               <AnimatePresence mode="wait">
@@ -167,11 +167,10 @@ export default function Experience() {
                 <button
                   key={i}
                   onClick={() => setCurrentIndex(i)}
-                  className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                    i === currentIndex 
-                      ? "bg-accent w-8" 
-                      : "bg-white/10 hover:bg-white/30"
-                  }`}
+                  className={`w-2 h-2 rounded-full transition-all duration-300 ${i === currentIndex
+                    ? "bg-accent w-8"
+                    : "bg-white/10 hover:bg-white/30"
+                    }`}
                   aria-label={`Go to testimonial ${i + 1}`}
                 />
               ))}

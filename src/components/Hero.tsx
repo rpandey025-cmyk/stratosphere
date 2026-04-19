@@ -81,7 +81,7 @@ export default function Hero() {
             className="flex flex-col sm:flex-row gap-6 items-center"
           >
             <motion.a 
-              href="mailto:info@thestratosphere.in"
+              href="https://wa.me/919820644294" target="_blank" rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="px-10 py-4 bg-white text-black font-bold rounded-full hover:bg-neutral-200 transition-all flex items-center justify-center gap-3 group shadow-xl shadow-white/10"
@@ -112,7 +112,7 @@ export default function Hero() {
                "Hindustan Unilever Limited", "Airtel", "Vi Telecom", "ZEE Media", "Balaji Telefilms", 
                "Kuku FM", "Purple Focus", "Vuclip Digital", "Startup Middle East", "Apalya Technologies", "OTT Ecosystem"
              ].map((name, i) => (
-               <span key={i} className="text-sm font-bold tracking-[0.3em] uppercase text-neutral-600 transition-colors cursor-default">
+               <span key={i} className="text-sm font-bold tracking-[0.3em] uppercase text-neutral-500 transition-colors cursor-default">
                  {name}
                </span>
              ))}
@@ -121,7 +121,7 @@ export default function Hero() {
                "Hindustan Unilever Limited", "Airtel", "Vi Telecom", "ZEE Media", "Balaji Telefilms", 
                "Kuku FM", "Purple Focus", "Vuclip Digital", "Startup Middle East", "Apalya Technologies", "OTT Ecosystem"
              ].map((name, i) => (
-               <span key={`dup-${i}`} className="text-sm font-bold tracking-[0.3em] uppercase text-neutral-600 transition-colors cursor-default">
+               <span key={`dup-${i}`} className="text-sm font-bold tracking-[0.3em] uppercase text-neutral-500 transition-colors cursor-default">
                  {name}
                </span>
              ))}

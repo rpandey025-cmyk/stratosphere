@@ -49,8 +49,8 @@ export default function Privacy() {
           <p className="text-neutral-400 font-light leading-relaxed">
             If you have questions or comments about this Privacy Policy, please contact us at:
             <br />
-            <a href="mailto:info@thestratosphere.in" className="text-white hover:text-accent transition-colors mt-2 inline-block">
-              info@thestratosphere.in
+            <a href="https://wa.me/919820644294" target="_blank" rel="noopener noreferrer" className="text-white hover:text-accent transition-colors mt-2 inline-block">
+              +91 98206 44294
             </a>
           </p>
         </section>

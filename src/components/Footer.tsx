@@ -41,8 +41,8 @@ export default function Footer() {
           <div className="md:col-span-3">
             <h4 className="text-[10px] font-bold uppercase tracking-[0.3em] text-neutral-600 mb-8">Contact</h4>
             <div className="space-y-4">
-              <a href="mailto:info@thestratosphere.in" className="block text-white hover:text-accent transition-colors text-lg font-medium tracking-tight">
-                info@thestratosphere.in
+              <a href="https://wa.me/919820644294" target="_blank" rel="noopener noreferrer" className="block text-white hover:text-accent transition-colors text-lg font-medium tracking-tight">
+                +91 98206 44294
               </a>
             </div>
           </div>
@@ -51,7 +51,7 @@ export default function Footer() {
         <div className="mt-32 pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-700">
           <p>© 2026 The Contented Media Tech Labs. All rights reserved.</p>
           <div className="flex gap-12">
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="/privacy" onClick={(e) => { e.preventDefault(); window.history.pushState({}, '', '/privacy'); window.dispatchEvent(new PopStateEvent('popstate')); window.scrollTo(0, 0); }} className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
           </div>
         </div>

@@ -18,9 +18,11 @@ export default function Navbar() {
         animate={{ y: 0, opacity: 1 }}
         className="max-w-7xl w-full h-16 glass-dark rounded-full flex items-center justify-between px-8 pointer-events-auto shadow-2xl shadow-black/50"
       >
-        <motion.div 
+        <motion.a 
+          href="/"
+          onClick={(e) => { e.preventDefault(); window.history.pushState({}, '', '/'); window.dispatchEvent(new PopStateEvent('popstate')); window.scrollTo(0, 0); }}
           whileHover={{ scale: 1.05 }}
-          className="flex flex-col items-start"
+          className="flex flex-col items-start block"
         >
           <div className="text-base font-garet font-medium tracking-[0.1em] text-white leading-none uppercase">
             THE STRATOSPHERE
@@ -28,7 +30,7 @@ export default function Navbar() {
           <div className="text-[10px] font-bold tracking-[0.4em] text-neutral-500 mt-1 font-garet lowercase">
             clarity <span className="text-accent">above</span> noise
           </div>
-        </motion.div>
+        </motion.a>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
@@ -43,7 +45,7 @@ export default function Navbar() {
             </motion.a>
           ))}
           <motion.a
-            href="mailto:info@thestratosphere.in"
+            href="https://wa.me/919820644294" target="_blank" rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="px-5 py-2 bg-white text-black text-[10px] font-bold rounded-full hover:bg-neutral-200 transition-colors flex items-center gap-2 uppercase tracking-[0.2em]"
@@ -76,7 +78,7 @@ export default function Navbar() {
             </a>
           ))}
           <a 
-            href="mailto:info@thestratosphere.in"
+            href="https://wa.me/919820644294" target="_blank" rel="noopener noreferrer"
             className="w-full py-4 bg-white text-black font-bold rounded-2xl text-center"
           >
             Work With Me

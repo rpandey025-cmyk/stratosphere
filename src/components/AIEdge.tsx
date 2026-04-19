@@ -121,7 +121,7 @@ export default function AIEdge() {
 
           <div className="mt-16 flex justify-center relative z-10">
             <motion.a 
-              href="mailto:info@thestratosphere.in"
+              href="https://wa.me/919820644294" target="_blank" rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="px-12 py-5 bg-white text-black font-bold rounded-full hover:bg-neutral-200 transition-all shadow-2xl shadow-white/10 flex items-center gap-3"
