@@ -22,14 +22,9 @@ export default function Navbar() {
           href="/"
           onClick={(e) => { e.preventDefault(); window.history.pushState({}, '', '/'); window.dispatchEvent(new PopStateEvent('popstate')); window.scrollTo(0, 0); }}
           whileHover={{ scale: 1.05 }}
-          className="flex flex-col items-start block"
+          className="block"
         >
-          <div className="text-base font-garet font-medium tracking-[0.1em] text-white leading-none uppercase">
-            THE STRATOSPHERE
-          </div>
-          <div className="text-[10px] font-bold tracking-[0.4em] text-neutral-500 mt-1 font-garet lowercase">
-            clarity <span className="text-accent">above</span> noise
-          </div>
+          <img src="/logo.png" alt="The Stratosphere" className="h-10 w-auto object-contain" />
         </motion.a>
 
         {/* Desktop Nav */}

@@ -11,13 +11,8 @@ export default function Footer() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <div className="flex flex-col items-start mb-8">
-                <div className="text-xl font-garet font-medium tracking-[0.1em] leading-none uppercase">
-                  THE STRATOSPHERE
-                </div>
-                <div className="text-[12px] font-bold tracking-[0.5em] text-neutral-600 mt-2 font-garet lowercase">
-                  clarity <span className="text-accent">above</span> noise
-                </div>
+              <div className="mb-8">
+                <img src="/logo.png" alt="The Stratosphere" className="h-16 w-auto object-contain" />
               </div>
               <p className="text-neutral-500 max-w-sm font-light leading-relaxed text-lg">
                 Content, Systems & Scalable Growth.
@@ -43,6 +38,9 @@ export default function Footer() {
             <div className="space-y-4">
               <a href="https://wa.me/919820644294" target="_blank" rel="noopener noreferrer" className="block text-white hover:text-accent transition-colors text-lg font-medium tracking-tight">
                 +91 98206 44294
+              </a>
+              <a href="https://www.linkedin.com/in/rishabh-pandey-01436832" target="_blank" rel="noopener noreferrer" className="block text-white hover:text-accent transition-colors text-lg font-medium tracking-tight">
+                Via LinkedIn
               </a>
             </div>
           </div>
