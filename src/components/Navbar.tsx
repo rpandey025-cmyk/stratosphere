@@ -21,9 +21,6 @@ export default function Navbar() {
         <motion.a 
           href="/"
           onClick={(e) => { e.preventDefault(); window.history.pushState({}, '', '/'); window.dispatchEvent(new PopStateEvent('popstate')); window.scrollTo(0, 0); }}
-        <motion.a 
-          href="/"
-          onClick={(e) => { e.preventDefault(); window.history.pushState({}, '', '/'); window.dispatchEvent(new PopStateEvent('popstate')); window.scrollTo(0, 0); }}
           whileHover={{ scale: 1.05 }}
           className="flex flex-col items-center justify-center relative group"
         >
