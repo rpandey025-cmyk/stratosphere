@@ -7,25 +7,25 @@ export default function Services() {
       title: "Strategic Brand Consulting",
       desc: "High-level strategy that aligns brand identity with commercial objectives for long-term authority.",
       icon: <Briefcase className="text-accent" size={20} />,
-      img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800&h=600"
+      img: "/brand-consulting.png"
     },
     {
       title: "Digital Ecosystem Design",
       desc: "Building integrated content machines that capture attention and convert at every touchpoint.",
       icon: <Globe className="text-accent-secondary" size={20} />,
-      img: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800&h=600"
+      img: "/digital-ecosystem.png"
     },
     {
       title: "AI-Powered Systems",
       desc: "Leveraging intelligent automation and AI workflows to scale operations without increasing overhead.",
       icon: <Zap className="text-white" size={20} />,
-      img: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800&h=600"
+      img: "/ai-systems.png"
     },
     {
       title: "Growth Partnerships",
       desc: "Strategic networking and alliance building to unlock new markets and distribution channels.",
       icon: <TrendingUp className="text-accent" size={20} />,
-      img: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800&h=600"
+      img: "/growth.png"
     }
   ];
 
