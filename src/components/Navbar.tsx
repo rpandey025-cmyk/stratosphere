@@ -21,10 +21,41 @@ export default function Navbar() {
         <motion.a 
           href="/"
           onClick={(e) => { e.preventDefault(); window.history.pushState({}, '', '/'); window.dispatchEvent(new PopStateEvent('popstate')); window.scrollTo(0, 0); }}
+        <motion.a 
+          href="/"
+          onClick={(e) => { e.preventDefault(); window.history.pushState({}, '', '/'); window.dispatchEvent(new PopStateEvent('popstate')); window.scrollTo(0, 0); }}
           whileHover={{ scale: 1.05 }}
-          className="block"
+          className="flex flex-col items-center justify-center relative group"
         >
-          <img src="/logo.png" alt="The Stratosphere" className="w-48 md:w-56 h-auto object-contain mix-blend-screen origin-left scale-110" />
+          {/* Shooting Star Icon */}
+          <div className="absolute -top-7 right-0 w-16 h-16 opacity-90 group-hover:opacity-100 transition-opacity">
+            <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-[0_0_8px_rgba(168,85,247,0.6)]">
+              <path d="M10 80 Q 60 80, 90 20 Q 50 40, 10 80 Z" fill="url(#nav_grad1)" />
+              <path d="M0 90 Q 50 90, 90 20 Q 40 50, 0 90 Z" fill="url(#nav_grad2)" opacity="0.8" />
+              <circle cx="90" cy="20" r="2" fill="#fff" className="animate-pulse" />
+              <circle cx="90" cy="20" r="6" fill="#a855f7" opacity="0.4" />
+              <defs>
+                <linearGradient id="nav_grad1" x1="10" y1="80" x2="90" y2="20">
+                  <stop offset="0%" stopColor="#8b5cf6" stopOpacity="0" />
+                  <stop offset="100%" stopColor="#d946ef" />
+                </linearGradient>
+                <linearGradient id="nav_grad2" x1="0" y1="90" x2="90" y2="20">
+                  <stop offset="0%" stopColor="#6366f1" stopOpacity="0" />
+                  <stop offset="100%" stopColor="#a855f7" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div className="flex items-center gap-2 mt-2">
+            <div className="w-3 h-[1px] bg-gradient-to-r from-transparent to-accent/50 hidden sm:block"></div>
+            <div className="text-[13px] font-garet font-medium tracking-[0.15em] text-white leading-none uppercase">
+              THE STRATOSPHERE
+            </div>
+            <div className="w-3 h-[1px] bg-gradient-to-l from-transparent to-accent/50 hidden sm:block"></div>
+          </div>
+          <div className="text-[8px] font-bold tracking-[0.4em] text-neutral-500 mt-1.5 font-garet lowercase flex items-center justify-center">
+            clarity <span className="text-accent drop-shadow-[0_0_5px_rgba(168,85,247,0.5)] mx-1">above</span> noise
+          </div>
         </motion.a>
 
         {/* Desktop Nav */}
