@@ -13,7 +13,7 @@ export default function Footer() {
             >
               <div className="flex flex-col items-center sm:items-start mb-8 relative group cursor-default">
                 {/* Shooting Star Icon */}
-                <div className="absolute -top-16 lg:left-14 left-1/2 -translate-x-1/2 lg:translate-x-0 w-28 h-28 opacity-90 group-hover:opacity-100 transition-opacity pointer-events-none">
+                <div className="logo absolute -top-16 lg:left-14 left-1/2 -translate-x-1/2 lg:translate-x-0 w-28 h-28 opacity-90 group-hover:opacity-100 transition-opacity pointer-events-none">
                   <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-[0_0_12px_rgba(168,85,247,0.6)]">
                     <path d="M10 80 Q 60 80, 90 20 Q 50 40, 10 80 Z" fill="url(#footer_grad1)" />
                     <path d="M0 90 Q 50 90, 90 20 Q 40 50, 0 90 Z" fill="url(#footer_grad2)" opacity="0.8" />
@@ -33,12 +33,12 @@ export default function Footer() {
                 </div>
                 <div className="flex items-center gap-4 w-full justify-center sm:justify-start pt-6">
                   <div className="flex-none w-6 h-[1px] bg-gradient-to-r from-transparent to-accent/40 hidden sm:block"></div>
-                  <div className="text-2xl font-garet font-medium tracking-[0.2em] text-white leading-none uppercase">
+                  <div style={{ fontFamily: "'Montserrat', sans-serif" }} className="text-2xl font-medium tracking-[0.2em] text-white leading-none uppercase">
                     THE STRATOSPHERE
                   </div>
                   <div className="flex-none w-6 h-[1px] bg-gradient-to-l from-transparent to-accent/40 hidden sm:block"></div>
                 </div>
-                <div className="text-[12px] font-bold tracking-[0.6em] text-neutral-400 mt-4 font-garet lowercase w-full flex justify-center sm:justify-start sm:pl-10 items-center gap-3">
+                <div style={{ fontFamily: "'Inter', sans-serif" }} className="text-[12px] font-bold tracking-[0.6em] text-neutral-400 mt-4 lowercase w-full flex justify-center sm:justify-start sm:pl-10 items-center gap-3">
                   <span>clarity</span>
                   <span className="text-accent drop-shadow-[0_0_8px_rgba(168,85,247,0.6)]">above</span>
                   <span>noise</span>
