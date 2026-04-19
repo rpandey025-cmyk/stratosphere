@@ -11,8 +11,8 @@ export default function Footer() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <div className="mb-8">
-                <img src="/logo.png" alt="The Stratosphere" className="h-16 w-auto object-contain" />
+              <div className="mb-6 -ml-4">
+                <img src="/logo.png" alt="The Stratosphere" className="w-64 md:w-80 h-auto object-contain mix-blend-screen" />
               </div>
               <p className="text-neutral-500 max-w-sm font-light leading-relaxed text-lg">
                 Content, Systems & Scalable Growth.

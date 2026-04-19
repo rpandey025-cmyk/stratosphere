@@ -24,7 +24,7 @@ export default function Navbar() {
           whileHover={{ scale: 1.05 }}
           className="block"
         >
-          <img src="/logo.png" alt="The Stratosphere" className="h-10 w-auto object-contain" />
+          <img src="/logo.png" alt="The Stratosphere" className="w-48 md:w-56 h-auto object-contain mix-blend-screen origin-left scale-110" />
         </motion.a>
 
         {/* Desktop Nav */}
