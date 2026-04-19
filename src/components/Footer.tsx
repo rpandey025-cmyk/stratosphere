@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-
+import { Logo } from "./Logo";
 export default function Footer() {
   return (
     <footer className="py-16 bg-black border-t border-white/5">
@@ -12,37 +12,7 @@ export default function Footer() {
               viewport={{ once: true }}
             >
               <div className="flex flex-col items-center sm:items-start mb-8 relative group cursor-default">
-                {/* Shooting Star Icon */}
-                <div className="logo absolute -top-16 lg:left-14 left-1/2 -translate-x-1/2 lg:translate-x-0 w-28 h-28 opacity-90 group-hover:opacity-100 transition-opacity pointer-events-none">
-                  <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-[0_0_12px_rgba(168,85,247,0.6)]">
-                    <path d="M10 80 Q 60 80, 90 20 Q 50 40, 10 80 Z" fill="url(#footer_grad1)" />
-                    <path d="M0 90 Q 50 90, 90 20 Q 40 50, 0 90 Z" fill="url(#footer_grad2)" opacity="0.8" />
-                    <circle cx="90" cy="20" r="2.5" fill="#fff" />
-                    <circle cx="90" cy="20" r="10" fill="#a855f7" opacity="0.3" className="animate-pulse" />
-                    <defs>
-                      <linearGradient id="footer_grad1" x1="10" y1="80" x2="90" y2="20">
-                        <stop offset="0%" stopColor="#8b5cf6" stopOpacity="0" />
-                        <stop offset="100%" stopColor="#d946ef" />
-                      </linearGradient>
-                      <linearGradient id="footer_grad2" x1="0" y1="90" x2="90" y2="20">
-                        <stop offset="0%" stopColor="#6366f1" stopOpacity="0" />
-                        <stop offset="100%" stopColor="#a855f7" />
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                </div>
-                <div className="flex items-center gap-4 w-full justify-center sm:justify-start pt-6">
-                  <div className="flex-none w-6 h-[1px] bg-gradient-to-r from-transparent to-accent/40 hidden sm:block"></div>
-                  <div style={{ fontFamily: "'Montserrat', sans-serif" }} className="text-2xl font-medium tracking-[0.2em] text-white leading-none uppercase">
-                    THE STRATOSPHERE
-                  </div>
-                  <div className="flex-none w-6 h-[1px] bg-gradient-to-l from-transparent to-accent/40 hidden sm:block"></div>
-                </div>
-                <div style={{ fontFamily: "'Inter', sans-serif" }} className="text-[12px] font-bold tracking-[0.6em] text-neutral-400 mt-4 lowercase w-full flex justify-center sm:justify-start sm:pl-10 items-center gap-3">
-                  <span>clarity</span>
-                  <span className="text-accent drop-shadow-[0_0_8px_rgba(168,85,247,0.6)]">above</span>
-                  <span>noise</span>
-                </div>
+                <Logo className="w-80 md:w-96 h-auto drop-shadow-[0_0_12px_rgba(168,85,247,0.4)]" />
               </div>
               <p className="text-neutral-500 max-w-sm font-light leading-relaxed text-lg">
                 Content, Systems & Scalable Growth.
