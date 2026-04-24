@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Analytics } from "@vercel/analytics/react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Positioning from "./components/Positioning";
@@ -38,6 +39,7 @@ function App() {
         )}
       </main>
       <Footer />
+      <Analytics />
     </div>
   );
 }
